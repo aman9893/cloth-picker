@@ -1,0 +1,193 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+a{
+    cursor: pointer;
+  }
+  
+  .google_cantainer img {
+    vertical-align: middle;
+    border-radius: 50%;
+    height: 80px;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#238cfd, #27d44f);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 7px 8px 8px 32px !important;
+    text-decoration: none;
+    font-size: 16px  !important;
+    color: #f8f9fa  !important;
+    display: block  !important;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .lead {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: cursive;
+    padding: 13px;
+    cursor: pointer;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  
+  .shape {
+    border-style: solid;
+    border-width: 0 70px 40px 0;
+    float: right;
+    height: 0px;
+    width: 0px;
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    -o-transform: rotate(360deg);
+    /* Opera 10.5 */
+    -webkit-transform: rotate(360deg);
+    /* Safari and Chrome */
+    transform: rotate(360deg);
+  }
+  
+  .shape-text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    right: -40px;
+    top: 2px;
+    white-space: nowrap;
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -o-transform: rotate(360deg);
+    /* Opera 10.5 */
+    -webkit-transform: rotate(30deg);
+    /* Safari and Chrome */
+    transform: rotate(30deg);
+  }
+  
+  .project {
+    min-height: 300px;
+    height: auto;
+  }
+  
+  .heraer{
+    background-image: linear-gradient(#007bff, #225d98);
+    height: 61px;
+    padding: 10px;
+    color: white;
+  }
+  
+  .project {
+    background: #fff;
+    /* border: 1px solid #ddd; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    overflow: hidden;
+    width: 367px;
+    margin-left: 13px;
+  }
+  
+  .project-radius {
+    border-radius: 7px;
+  }
+  
+  .project-default {
+    /* border-color: #999999; */
+  }
+  
+  .project-default .shape {
+    border-color: transparent #999999 transparent transparent;
+    border-color: rgba(255, 255, 255, 0) #999999 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  
+  .project-danger {
+    border-color: #d9534f;
+  }
+  
+  .project-danger .shape {
+    border-color: transparent #d9534f transparent transparent;
+    border-color: rgba(255, 255, 255, 0) #d9534f rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  
+  .project-success {
+    border-color: #5cb85c;
+  }
+  
+  .project-success .shape {
+    border-color: transparent #5cb85c transparent transparent;
+    border-color: rgba(255, 255, 255, 0) #5cb85c rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  
+  .project-primary {
+    border-color: #428bca;
+  }
+  
+  .project-primary .shape {
+    border-color: transparent #428bca transparent transparent;
+    border-color: rgba(255, 255, 255, 0) #428bca rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  
+  .project-info {
+    border-color: #5bc0de;
+  }
+  
+  .project-info .shape {
+    border-color: transparent #5bc0de transparent transparent;
+    border-color: rgba(255, 255, 255, 0) #5bc0de rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  
+  .project-warning {
+    border-color: #f0ad4e;
+  }
+  
+  .project-warning .shape {
+    border-color: transparent #f0ad4e transparent transparent;
+    border-color: rgba(255, 255, 255, 0) #f0ad4e rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  
+  .project-content {
+    padding: 0 20px 10px;
+  }
+  
+  .select_shirt img{
+    width: 326px;
+  }
+  
+  .logoutbtn{
+    float: right;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  

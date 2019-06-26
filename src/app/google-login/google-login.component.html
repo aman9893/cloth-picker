@@ -1,0 +1,16 @@
+
+<div class="wrapper_login">
+  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card card-signin">
+      <div class="card-body">
+        <h5 class="card-title text-center">Decide what to wear today</h5>
+        <form class="form-signin">
+    
+          <hr class="my-4">
+          <button  *ngIf="!user" class="btn btn-lg btn-google btn-block text-uppercase google_btn"   type="button" (click)="signInWithGoogle()"><i class="fa fa-google" aria-hidden="true"></i> Sign in with Google</button>
+          <button class="btn btn-lg btn-facebook btn-block text-uppercase google_btn"   type="button" (click)="signInWithFB()"><i class="fa fa-facebook" aria-hidden="true"></i>Sign in with Facebook</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

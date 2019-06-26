@@ -1,0 +1,172 @@
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a >    
+       <div *ngIf="user">
+      <div class="google_cantainer">
+          <img src="{{ user.photoUrl }}">
+        <h6>{{ user.name }}</h6>
+        <p>{{ user.email }}</p>
+      </div>
+   </div></a>
+    <a >What To Wear</a>
+    <a >Favorite Cloths </a>
+    <a >ADD Cloths </a>
+    <a >All Cloths </a>
+  </div>
+  
+  <div id="main">
+<div class="heraer">
+    <span style="font-size:25px;cursor:pointer" (click)="openNav()">&#9776;  Cloth Picker</span>
+    <span class="logoutbtn" (click)="signOut()"> Logout</span>
+</div>
+    <div class="container">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a [routerLink]="['/dashboard']">Home</a></li>
+                <li class="breadcrumb-item"><a >details</a></li>
+            </ol>
+        </nav>
+        <div class="row">
+          <div class="col-xs-4">
+        <div class="project project-default" (click)="details()"  >
+          <div class="shape">
+            <div class="shape-text">
+              Pair 1					
+            </div>
+          </div>
+          <div class="font_data">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="lead">
+                Pair1
+            </h3>
+            <span class="select_shirt">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc0W63LOH6iPKOYeEwwJsQZwgehJ-hoIh88m2VhjXkWXjnPysr">
+            </span>
+          </div>
+        </div>
+      </div>   
+          <div class="col-xs-4">
+          <div class="project project-success"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+                Pair2						
+            </div>
+          </div>
+          <div class="font_data">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                  Pair2
+              </h3>
+              <span class="select_shirt">
+                <img src="https://www.eredipisano.com/epFW2017.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+  
+          <div class="col-xs-4">
+            <div class="project project-radius project-primary"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+                Pair 3					
+            </div>
+          </div>
+          <div class="font_data">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                Pair 3
+              </h3>
+              <span class="select_shirt">
+                <img src="https://www.eredipisano.com/image/cache/data/Blog/fw1617-men-suit-colection-eredi-pisano-1000x667h.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+  
+          <div class="col-xs-4">
+              <div class="project project-info"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+              Pair	4							
+            </div>
+          </div>
+          <div class="font_data">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                  Pair 4
+              </h3>
+              <span class="select_shirt">
+                <img src="https://i.dmarge.com/2016/04/white-pants-shirt-960x620.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+          
+          <div class="col-xs-4">
+              <div class="project project-radius project-warning"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+              Pair	5							
+            </div>
+          </div>
+          <div class="font_data">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                Pair5
+              </h3>
+              <span class="select_shirt">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQg4UmGaprglbqb8AKidY_ybnnq4HXzTUCBXRS9TIYQQWHcZlQA">
+              </span>
+            </div>
+        </div>
+      </div>
+          
+          <div class="col-xs-4">
+              <div class="project project-radius project-danger"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+               Pair 6					
+            </div>
+          </div>
+          <div class="font_data">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                Pair 6				
+              </h3>
+              <span class="select_shirt">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJcczV5x5sSJIG40iSBQiwjAeIJWVBSUntQ-H9gwLaPttbE5R3Gw">
+              </span>
+            </div>
+        </div>
+      </div>
+          
+    </div><!--/row-->
+  </div><!--/container -->
+  </div>
+  

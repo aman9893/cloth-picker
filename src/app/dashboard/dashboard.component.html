@@ -1,0 +1,143 @@
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a >    
+       <div *ngIf="user">
+      <div class="google_cantainer">
+          <img src="{{ user.photoUrl }}">
+        <h6>{{ user.name }}</h6>
+        <p>{{ user.email }}</p>
+      </div>
+   </div></a>
+    <a >What To Wear</a>
+    <a >Favorite Cloths </a>
+    <a >ADD Cloths </a>
+    <a >All Cloths </a>
+  </div>
+  
+  <div id="main">
+<div class="heraer">
+    <span style="font-size:25px;cursor:pointer" (click)="openNav()">&#9776; Cloth Picker</span>
+    <span class="logoutbtn" (click)="signOut()"> Logout</span>
+</div>
+    <div class="container">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a [routerLink]="['/dashboard']">Home</a></li>
+                <li class="breadcrumb-item"><a >Products</a></li>
+           
+            </ol>
+        </nav>
+        <div class="row">
+          <div class="col-xs-4">
+        <div class="project project-default" (click)="details()"  >
+          <div class="shape">
+            <div class="shape-text">
+                t-shirt								
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="lead">
+                T-shirt
+            </h3>
+            <span class="select_shirt">
+              <img src="https://assets.ajio.com/medias/sys_master/root/he5/hda/13352528183326/u.s._polo_assn._red_crew_graphic_printed_round_neck_t-shirt.jpg">
+            </span>
+          </div>
+        </div>
+      </div>   
+          <div class="col-xs-4">
+          <div class="project project-success"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+                T-shirt						
+            </div>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                  T-shirt
+              </h3>
+              <span class="select_shirt">
+                <img src="https://assets.ajio.com/medias/sys_master/root/h42/h3a/13352538996766/disney_black_crew_iron_man_print_round_neck_t-shirt.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+  
+          <div class="col-xs-4">
+            <div class="project project-radius project-primary"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+                Jeans					
+            </div>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                  Skinny Jeans
+              </h3>
+              <span class="select_shirt">
+                <img src="https://assets.ajio.com/medias/sys_master/root/h88/h08/13358055555102/-473Wx593H-460296122-blue-MODEL.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+  
+          <div class="col-xs-4">
+              <div class="project project-info"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+                Jeans								
+            </div>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                  Washed Slim Fit Jeans
+              </h3>
+              <span class="select_shirt">
+                <img src="https://assets.ajio.com/medias/sys_master/root/h75/h24/13341821927454/-473Wx593H-460309793-blue-MODEL.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+          
+          <div class="col-xs-4">
+              <div class="project project-radius project-warning"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+              top								
+            </div>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                  Textured Top with Boat Neck
+              </h3>
+              <span class="select_shirt">
+                <img src="https://assets.ajio.com/medias/sys_master/root/h02/h82/13019127709726/-473Wx593H-460333483-black-MODEL7.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+          
+          <div class="col-xs-4">
+              <div class="project project-radius project-danger"  (click)="details()" >
+          <div class="shape">
+            <div class="shape-text">
+                Slim Fit					
+            </div>
+          </div>
+          <div class="project-content">
+              <h3 class="lead">
+                  Fit Crew-Neck T-shirt
+              </h3>
+              <span class="select_shirt">
+                <img src="https://assets.ajio.com/medias/sys_master/root/h7a/ha7/12407806099486/ajio_grey_crew_typographic_print_slim_fit_crew-neck_t-shirt.jpg">
+              </span>
+            </div>
+        </div>
+      </div>
+          
+    </div><!--/row-->
+  </div><!--/container -->
+  </div>
+  

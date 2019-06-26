@@ -1,0 +1,8 @@
+.font_data{
+    float: left;
+    padding: 10px;
+}
+.font_data i{
+    margin: 6px;
+    cursor: pointer;
+}
